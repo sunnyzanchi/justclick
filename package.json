@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "express": "^4.15.3",
+    "express-ws": "^3.0.0"
+  },
+  "name": "justclick",
+  "version": "1.0.0",
+  "description": "Just click",
+  "main": "index.js",
+  "repository": {},
+  "author": "Zanchi",
+  "license": "MIT"
+}
