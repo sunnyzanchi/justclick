@@ -46,14 +46,7 @@ canvas.addEventListener('mousemove', function({x, y}){
   }
 });
 
-var count = 0;
-setInterval(function(){
-  console.log(count);
-  count = 0;
-}, 1000);
-
 ws.onmessage = function({data}){
-  count++;
   const [x, y] = data.split(',');
 
   if(circles.size < 300){
