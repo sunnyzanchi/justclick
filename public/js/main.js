@@ -56,7 +56,9 @@ ws.onmessage = function({data}){
   count++;
   const [x, y] = data.split(',');
 
-  drawCircle(x, y);
+  if(circles.size < 300){
+    drawCircle(x, y);
+  }
 }
 
 const render = function render(){
@@ -65,7 +67,7 @@ const render = function render(){
   for(let circle of circles){
     let {x, y, r, c} = circle;
 
-    if(r === 100){
+    if(r > 600){
       circles.delete(circle);
     }
 
