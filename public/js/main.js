@@ -30,16 +30,16 @@ const randomElement = function randomElement(array){
 
 var heldDown = false;
 
-canvas.addEventListener('mousedown', function({x, y}){
+canvas.addEventListener('mousedown', function({offsetX: x, offsetY: y}){
   heldDown = true;
   drawCircle(x, y);
 });
 
-canvas.addEventListener('mouseup', function({x, y}){
+canvas.addEventListener('mouseup', function({offsetX: x, offsetY: y}){
   heldDown = false;
 });
 
-canvas.addEventListener('mousemove', function({x, y}){
+canvas.addEventListener('mousemove', function({offsetX: x, offsetY: y}){
   if(heldDown){
     ws.send(`${x},${y}`);
     drawCircle(x, y);
