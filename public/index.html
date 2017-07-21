@@ -2,16 +2,32 @@
   <head>
     <style>
       html,body{
+        font-family: sans-serif;
         margin: 0;
         padding: 0;
       }
+      h1{
+        text-align: center;
+      }
       canvas{
         background: #ccc;
+        margin: auto;
+      }
+      canvas:hover{
+        cursor: default;
+      }
+      .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
       }
     </style>
   </head>
   <body>
-    <canvas width="600" height="600"></canvas>
+    <h1>Just Click</h1>
+    <div class="container">
+      <canvas width="600" height="600"></canvas>
+    </div>
     <script src="/js/main.js" charset="utf-8"></script>
   </body>
 </html>
