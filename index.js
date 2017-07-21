@@ -26,5 +26,4 @@ app.ws('/', function handler(ws, req){
 
 });
 
-
 app.listen(3000);
